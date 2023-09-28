@@ -51,7 +51,7 @@ public class InputManager : MonoBehaviour
         moveDirection.x = (_keyboard.dKey.isPressed ? 1 : 0) + (_keyboard.aKey.isPressed ? -1 : 0);
         moveDirection.y = (_keyboard.wKey.isPressed ? 1 : 0) + (_keyboard.sKey.isPressed ? -1 : 0);
     // Set the jump bools when spacebar is interacted with
-        jumpPressed = _keyboard.spaceKey.wasPressedThisFrame;
+        jumpPressed = _keyboard.spaceKey.isPressed;
         jumpReleased = _keyboard.spaceKey.wasReleasedThisFrame;
         jumpHeld = _keyboard.spaceKey.isPressed; 
     // Set the interact bools when the f key is interacted with
